@@ -1,10 +1,4 @@
-# IceHrNet
-IceHrNet-IceSegmentation 
-A high resolution semantic segmentaion networkfor river ice segmentation  
-
-The code and models will be released here...
-
-## 1 Summary
+## 1 IceHrNet
 IceHrNet is a Texture-Sensitive Semantic Segmentation method for Zero-Shot transfer learning.
 
 This code contains:
@@ -13,7 +7,7 @@ This code contains:
 3. PaddleSeg framework (include IceHrNet network, model file: "IceHrNet/PaddleSeg/paddleseg/models/icehrnet.py"; backbone file:"IceHrNet/PaddleSeg/paddleseg/models/backbones/icehrnet_backbone.py")
 
 <div align="center">
-<img src="./abstract.png"  width = "1000" />  
+<img src="./abstract.png"  width = "800" />  
 </div>
 
 ## 2 Installation
@@ -28,11 +22,11 @@ This code contains:
 
 ### 2.2 Install PaddlePaddle
 
-you might need Conda:
+Required Conda:
 ```
 conda create -n env_icehrnet python=3.8
 
-conda activate env_paddleseg
+conda activate env_icehrnet
 
 conda install cudatoolkit=11.7.0 -c conda-forge
 
@@ -137,14 +131,7 @@ python evaluate.py
 If you find our project useful in your research, please consider citing:
 
 ```latex
-@misc{IcehrnetAndASTL2023,
-      title={An easy zero-shot learning combination: Texture Sensitive Semantic Segmentation IceHrNet and Advanced Style Transfer Learning Strategy},
-      author={Zhiyong Yang and Yuelong Zhu and Xiaoqin Zeng and Jun Zong and Xiuheng Liu and Ran Tao and Xiaofei Cong and Yufeng Yu},
-      year={2023},
-      eprint={2309.06175},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
-}
+
 
 @misc{icehrnet2023,
     title={IceHrNet, Texture-Sensitive Semantic Segmentation method for Zero-Shot transfer learning},
